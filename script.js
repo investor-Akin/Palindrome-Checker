@@ -1,14 +1,11 @@
-function check(){
-    // const resultInput = document.getElementById("textInput").value.toLowerCase();
-    const resultInput = textInput.value; 
-    const reversed = textInput.value.split('').reverse().join('').toLowerCase("");
-    if (resultInput == ""){
-        resultShow.innerHTML = "Enter the word you wish to check!!!!"
-    } else{
-        if (resultInput === reversed){
-            resultShow.innerHTML = resultInput + " is a palindrome Word"
-        } else {
-            resultShow.innerHTML = resultInput  + " is not a palindrome Word"
-        }
+function check() {
+    const input = textInput.value;
+    const reversed = input.split('').reverse().join('');
+    if (input === "") {
+        resultShow.innerHTML = "Enter the word you wish to check!!!!";
+    } else if (input.toLowerCase() === reversed.toLowerCase()) {
+        resultShow.innerHTML = input + " is a palindrome word";
+    } else {
+        resultShow.innerHTML =  input + " is Not a palindrome word";
     }
 }
