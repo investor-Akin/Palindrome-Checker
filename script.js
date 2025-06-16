@@ -6,6 +6,7 @@ function check() {
     } else if (input.toLowerCase() === reversed.toLowerCase()) {
         resultShow.innerHTML = input + " is a palindrome word";
     } else {
-        resultShow.innerHTML =  input + " is Not a palindrome word";
+        resultShow.innerHTML =  input + " is not a palindrome word";
     }
 }
+    
